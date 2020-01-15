@@ -1,0 +1,29 @@
+/* config.h.in.  Generated automatically from configure.in by autoheader.  */
+
+/* Define if you have the <readline/readline.h> header file.  */
+#undef HAVE_READLINE_READLINE_H
+
+/* Define if you have the <usb.h> header file.  */
+#undef HAVE_USB_H
+
+/* Define if you have the history library (-lhistory).  */
+#undef HAVE_LIBHISTORY
+
+/* Define if you have the ncurses library (-lncurses).  */
+#undef HAVE_LIBNCURSES
+
+/* Define if you have the readline library (-lreadline).  */
+#undef HAVE_LIBREADLINE
+
+/* Define if you have the usb library (-lusb).  */
+#undef HAVE_LIBUSB
+
+/* Name of package */
+#undef PACKAGE
+
+/* Version number of package */
+#undef VERSION
+
+/* case ignoring string comparison with specified length */
+#undef strncasecmp
+

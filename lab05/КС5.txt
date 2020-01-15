@@ -1,0 +1,25 @@
+send_from - mail откуда
+send_to - куда mail
+file_name - имя файла передоваемого
+message_body - передоваемое сообщение
+
+os.listdir - список файлов и директорий в папке
+
+email.mime.application(MIMEApplication) 
+email.mime.multipart(MIMEMultipart) - отправк. сообщений в 2 
+форматах (text html)
+email.mime.text(MIMEText) - формат сообщения
+email.mime.base(MIMEBase) - добовлять вложение в письмо
+email.utils(COMMASPACE, formatdate) - 
+email(encoders) -  для кодирования (преобразование файла при отправке)
+
+MIMEBase('application', "octet-stream") - формируем тело для вложения
+part.set_payload - загружаем в тело письма файл.
+encoders.encode_base64(part) - кодируем файл в base64.
+part.add_header -добавляем заголовок к Content-Description контентной 
+части письма. Указываем просто имя файла и размер.
+
+msg = MIMEMultipart() - создаем нашу сообщение, как многокомпонентный объект
+(письмо будет состоять из текстовой части, html и вложения).
+msg.attach(MIMEText(message_body, 'plain'))-присоединяем к письму 
+сформированное тело в текстовом формате.
